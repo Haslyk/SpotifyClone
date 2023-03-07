@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spotify</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <i class="fa-brands fa-spotify"></i> Spotify
+        </div>
+        <div class="list">
+            <ul class="list-group">
+                <a href="#"> <li class="list-group-item ok"><i class="fa-solid fa-house"></i> Ana sayfa</li></a>
+                <a href="#"><li class="list-group-item"><i class="fa-solid fa-magnifying-glass"></i> Ara</li></a>
+                <a href="#"><li class="list-group-item"><i class="fa-solid fa-book"></i> Kitaplığın</li></a>
+            </ul>
+
+            <ul class="list-group">
+                <a href="#"><li> <i class="fa-solid fa-circle-plus"></i> Çalma Listesi Oluştur</li></a>
+                <a href="#"><li class="list-group-item"><i class="fa-brands fa-gratipay"></i> Beğenilen Şarkılar</li></a>
+            </ul>
+            <hr style="color: #B3B3B3;width: 76%;margin-left: 12%;">
+        </div>
+    </nav>
+    <div class="container">
+        <div class="top-nav position-sticky" id="nav">
+            <div class="selectors">
+                <button type="button" class="btn btn-dark"><i class="fa-solid fa-angle-left"></i></button>
+                <button type="button" class="btn btn-dark"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+            <div class="account">
+                <button type="button" class="btn btn-dark"><i class="fa-solid fa-user"></i> <span>Halim</span> <i class="fa-solid fa-caret-down"></i></button>
+            </div>
+        </div>
+        <div class="row" id="yakindaCalinan">
+            
+        </div>
+        
+        <div class="row" id="denemeyeDeger">
+            
+        </div>
+
+        <div class="row" id="bugunDinlenen">
+        
+        </div>
+        
+        <div class="row" id="oneCikanlar">
+        
+        </div>
+    
+    </div>
+
+
+    
+    <script src="script.js"></script>
+    <script src="musicList.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+@font-face {
+    font-family: circular;
+    src: url(./fonts/CircularStd-Light.otf);
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+
+nav {
+    width: 285px;
+    height: 100vh;
+    background-color: #000;
+}
+
+.logo  {
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    padding: 10% 13%;
+    font-size: 2.8rem;
+    font-weight: 600;
+    font-family: circular;
+}
+.logo i {
+    font-size: 3.7rem;
+    padding-right: 2%;
+}
+
+.list ul {
+    margin-bottom: 10%;
+}
+
+.list ul li.ok {
+    color: #fff;
+}
+
+.list ul a {
+    text-decoration: none;
+}
+
+.list ul a li:hover {
+    color: #fff;
+}
+
+.list ul a li {
+    display: flex;
+    align-items: center;
+    padding: 4% 0 4% 13%;
+    background: transparent;
+    font-family: circular;
+    color: #B3B3B3;
+    transition: all 500ms ease-in-out;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.list ul a li i {
+    font-size: 2.2rem;
+    padding-right: 7%;
+}
+
+
+
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding-left: 0!important;
+    padding-right: 0!important;
+    overflow-y: scroll;
+    background-image: linear-gradient(to left top, #000000, #101010, #1a1a1a, #232323, #2d2d2d);
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    z-index: 10;
+    position:sticky;
+    padding: 0 3%;
+    width: 100%;
+    height: 8%;
+    color: #fff;
+    font-size: 2rem;
+    transition: all 300ms ease-in;
+}
+
+.scrollNav {
+    background-color: #060606;
+}
+
+
+.selectors {
+    width: 9%;
+    display: flex;
+    justify-content: space-around;
+}
+.selectors button {
+    width: 30%;
+    border-radius: 50%;
+    border: none;
+    padding: 5%;
+    background-color: #000;
+}
+.selectors button:hover {
+    background-color: rgba(0, 0, 0, 0.78);
+}
+
+.selectors button i {
+    font-size: 1.9rem;
+    color: #B3B3B3;
+}
+
+
+.account {
+    width: 9%;
+    
+   
+}
+.account button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5%;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    background-color: #000;
+}
+.account button:hover {
+    background-color: rgba(0, 0, 0, 0.841);
+}
+.account i {
+    border-radius: 50%;
+    padding: 6%;
+}
+.account span {
+    font-family: circular;
+    font-weight: 600;
+}
+
+.account i:nth-child(1) {
+    background-color: rgb(177, 177, 177, .3);
+    
+}
+
+.row {
+    padding: 3%;
+}
+
+.col-12 {
+    margin-bottom: 3%;
+}
+.col-12 a {
+    text-decoration: none;
+    display: inline-block;
+}
+.col-12 a:hover {
+    text-decoration: underline;
+    text-decoration-color: #fff;
+}
+
+.col-12 h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.card {
+    height:280px!important;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 1%;
+    border-radius: 8px!important;
+    background-color: #181818!important;
+    color: #fff;
+    transition: all 300ms ease-in-out;
+}
+.card:hover {
+    background-color: #1e1e1ea5!important;
+}
+.card img {
+    width: 100%;
+}
+.card button {
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 60%;
+    background-color: #1ed760;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 2.3rem;
+    color: #000!important;
+    padding-left: 5%;
+    transition: all 500ms ease-in-out;
+}
+.card button:hover, .card button:focus {
+    background-color: #1ed760;
+}
+
+.card button.visibleBtn {
+    animation: fadeIn 1s;
+    opacity: 1;
+    transform: translateY(-35%);
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+       opacity: 1;
+    }
+  }
+
+.card-body {
+    width: 100%;
+    padding-top: 15%!important;
+    text-align: left;
+}
+.card-body h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.card-body p {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #B3B3B3;
+}
